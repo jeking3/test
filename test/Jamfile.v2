@@ -157,7 +157,7 @@ test-suite "writing-test-ts"
   [ boost.test-self-test run : writing-test-ts : tools-under-debugger-test ]
   [ boost.test-self-test run : writing-test-ts : tools-debuggable-test  : : : : : : $(requirements_boost_test_full_support) ]
   [ boost.test-self-test run : writing-test-ts : test-dataset-over-tuples  : : : : : : $(requirements_datasets) ]
-  [ boost.test-self-test run : writing-test-ts : nullptr-support-test : : : : : : [ requires cxx11_nullptr ] ]
+  [ boost.test-self-test run : writing-test-ts : nullptr-support-test : boost_unit_test_framework/<link>shared : : : : : [ requires cxx11_nullptr ] ]
   [ boost.test-self-test run : writing-test-ts : user-defined-types-logging-customization-points ]
   [ boost.test-self-test run : writing-test-ts : test-fixture-detect-setup-teardown ]
   [ boost.test-self-test run : writing-test-ts : test-fixture-detect-setup-teardown-cpp11 : : : : : : [ requires cxx11_decltype cxx11_trailing_result_types ] ]

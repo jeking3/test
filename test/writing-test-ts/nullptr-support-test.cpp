@@ -5,6 +5,7 @@
 
 //  See http://www.boost.org/libs/test for the library home page.
 
+#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE nullptr_support
 #include <boost/test/unit_test.hpp>
 
@@ -18,4 +19,9 @@ BOOST_AUTO_TEST_CASE(test2)
 {
     int *p = nullptr;
     BOOST_CHECK_EQUAL(p, nullptr);
+}
+
+BOOST_AUTO_TEST_CASE( plv_tc )
+{
+    BOOST_TEST( nullptr == nullptr );
 }
