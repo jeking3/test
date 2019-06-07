@@ -111,7 +111,7 @@ stack_decorator::operator*() const
 }
 
 void
-stack_decorator::apply( test_unit& tu )
+stack_decorator::apply( test_unit& )
 {
     // does nothing by definition
 }
